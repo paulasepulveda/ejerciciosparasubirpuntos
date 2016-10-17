@@ -12,8 +12,32 @@ function numeroPar(num){
 	}
 }
 //Ejercicio N°3 "Ordenando números de menor a mayor"
-
-
+function ordenados(a,b,c){
+			if (a<b && a<c){
+			console.log(a+" ");
+			if (a<c){
+			console.log(b+" "+c);
+			}else{
+			console.log(c+" "+b);
+			}
+    		}else{
+			if(b<c){
+			console.log(b+" ");
+			if (a<c){
+			console.log(a+" "+c);	
+			}else{
+			console.log(c+" "+a);
+			}
+			}else{
+			console.log(c+" ");
+			if (a<b){
+			console.log(a+" "+b);
+			}else{
+			console.log(b+" "+a);
+			}
+		}
+	}
+}
 //Ejercicio N°4 "Mayúscula o minuscula"
 function mayuscula(cadena){
 	var resultado="la palabra "+cadena+" ";
@@ -60,7 +84,6 @@ function numeroPrimo(num){
 	}
 	return (true);
 }
-
 //Ejercicio N°9 "Multiplos de un número"
 function multiplos(n){
 	var total=" ";
@@ -72,5 +95,14 @@ function multiplos(n){
 	return total;
 }
 //Ejercicio N°10 "Cantidad de dígitos"
-	
+function cantidadDigitos(n){
+	if (n<10){
+		return 1;
+	}else{
+		if(n<100){
+			return 2;
+		}
+	}
+}
+
 
