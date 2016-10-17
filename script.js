@@ -62,6 +62,15 @@ function numeroPrimo(num){
 }
 
 //Ejercicio N°9 "Multiplos de un número"
-
+function multiplos(n){
+	var total=" ";
+	var resultado=1;
+	for(var i=1;i<=10;i++){
+		var resultado=n*i;
+		total+=(n*i+" ");
+	}
+	return total;
+}
+//Ejercicio N°10 "Cantidad de dígitos"
 	
 
